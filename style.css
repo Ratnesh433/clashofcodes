@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:ital,wght@0,500;0,800;1,400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth
+}
+
+:root {
+  --bg-clor: #f9f9f9;
+  --majorelle-blue: #574ae2ff;
+  --royal-blue-traditional: #222a68ff;
+  --ultra-violet: #654597ff;
+  --lavender-floral: #ab81cdff;
+  --mauve: #e2adf2ff;
+  --dark-bg1: #343434;
+}
+
+html {
+  font-size: 62.5%
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #343434;
+  position: relative
+}
+
+#main {
+  width: 100%;
+  height: 100%
+}
+
+li,
+a {
+  text-decoration: none;
+  color: #000;
+  list-style: none
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: var(--majorelle-blue);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #f9f9f9;
+  position: fixed;
+  top: 0;
+  z-index: 100
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  font-size: 1.8rem
+}
+
+.navlinks li a {
+  color: #f9f9f9;
+  font-weight: 500;
+  border-bottom: 2px solid transparent
+}
+
+.navlinks li a:hover,
+a:active {
+  text-shadow: 0 0 30px #aab4ff;
+  border-bottom: 2px solid #251a98
+}
+
+.logo {
+  cursor: pointer;
+  color: #fff
+}
+
+.logo span {
+  color: #4dff76
+}
+
+.signin {
+  height: 35px;
+  width: 8rem;
+  margin-right: 3.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer
+}
+
+.signin:hover {
+  box-shadow: 0 0 10px 2px #aab4ff
+}
+
+.signin:active {
+  background-color: #d9d8e2
+}
+
+.home {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  background-color: var(--dark-bg1);
+  margin-top: 70px
+}
+
+.home-left {
+  width: 50%;
+  height: 100%;
+  padding-top: 10rem;
+  padding-left: 5rem;
+  font-size: 2rem
+}
+
+.home-right {
+  width: 50%;
+  height: 100%;
+  background-color: var(--dark-bg1);
+}
+
+.home-right img {
+  width: 100%;
+  height: 80%;
+  margin: 10% auto;
+  background-color: var(--dark-bg1);;
+}
+
+.features {
+  height: calc(100vh + 70px);
+  width: 100%;
+  background-color: var(--dark-bg1);
+  /* padding-top: 70px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#coc-video {
+  border-radius: 2rem;
+  width: 100%;
+  height: 40rem;
+}
+
+
+.how-it-works {
+  height: calc(100vh + 70px);
+  width: 100%;
+  background-color: var(--dark-bg1);
+  padding-top: 70px;
+  text-align: center;
+  color: white;
+}
+
+.contact {
+  padding-top: 70px;
+  padding-left: 7px;
+  padding-right: 7px;
+  height: calc(100vh + 10rem);
+  width: 100%;
+  background-color: #6189de;
+  display: flex;
+  flex-direction: column;
+  text-align: center
+}
+
+.contest {
+  width: 15rem;
+  height: 5rem;
+  background-color: var(--majorelle-blue);
+  font-weight: 600;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer
+}
+
+.contest:hover {
+  background-color: #616dc7;
+  box-shadow: 0 0 20px 0 #6871b4
+}
+
+.home-coc {
+  font-size: 5rem;
+  color: #fff;
+  cursor: default
+}
+
+.home-coc span {
+  color: #4dff76
+}
+
+.contact h2 {
+  color: #2b2b2b;
+  font-size: 2.5rem
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  background-color: #fff;
+  border-radius: .8rem;
+  border: 2px solid var(--main-color);
+  margin: 1rem 0;
+  resize: none
+}
+
+.input-box select {
+  width: 30rem;
+  font-size: 1.8rem;
+  padding: 1.5rem
+}
+
+.input-box label {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-left: 1.5rem
+}
+
+.input-box select {
+  border-radius: 4px;
+  background-color: #fff
+}
+
+.contact .input-box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: start
+}
+
+.btn {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 5px
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px 2px #e0edff
+}
+
+#menu-icon {
+  display: none
+}
+
+#checkbox-menu {
+  display: none
+}
+
+.icons {
+  position: absoulte;
+  right: 5%;
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none
+}
+
+@media only screen and (max-width: 800px) {
+  .home-right img {
+    height: 70%
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .header {
+    padding: auto 2rem
+  }
+
+  .home {
+    flex-direction: column;
+    height: fit-content
+  }
+
+  .home-left {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+    padding-left: 2.5rem
+  }
+
+  .home-right {
+    width: 100%;
+    padding: 2px 1.5rem;
+    height: fit-content
+  }
+
+  .navlinks {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+    background: #6871b48a;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 .5rem 1rem #0000001c;
+    overflow: hidden;
+    transition: .5s ease
+  }
+
+  .signin {
+    margin: 0
+  }
+
+  .header {
+    padding-left: 1.2rem;
+    padding-right: 1.4rem
+  }
+
+  .navlinks li a {
+    display: block
+  }
+
+  #menu-icon,
+  #close-icon {
+    display: block;
+    font-size: 3.6rem;
+    cursor: pointer
+  }
+
+  .icons {
+    display: inline-flex
+  }
+  
+  #checkbox-menu:checked~.icons #menu-icon {
+    display: none
+  }
+
+  .icons #close-icon {
+    display: none
+  }
+
+  #checkbox-menu:checked~.icons #close-icon {
+    display: block
+  }
+
+  #checkbox-menu:checked~.navlinks {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70vw;
+    left: 30vw
+  }
+
+
+  .features {
+    height: calc(35vh + 10px);
+    padding: 80px 3px 10px 3px;
+  }
+  #coc-video {
+    border-radius: 2rem;
+    width: 100%;
+    height: 25vh;
+  }
+}
